@@ -11,7 +11,7 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', v = sys.version_info)
+    return render_template('about.html', v = ' ()-- ' + str(sys.version_info))
 
 
 
