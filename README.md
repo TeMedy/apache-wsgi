@@ -1,4 +1,4 @@
-# Apache + mod_wsgi in Python3 Container
+# Apache with mod_wsgi-express in Container
 
 > This project is for running a Python 3 web framework such as [Flask](http://flask.pocoo.org/) by integrating [mod_wsgi](https://github.com/GrahamDumpleton/mod_wsgi) and [Apache](https://httpd.apache.org/) server in a [Docker](https://www.docker.com/) container. 
 
