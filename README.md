@@ -19,7 +19,7 @@ Build the container by running the following docker build command (don't forget 
 
 Use the following command to run the `Dockerfile` (Note that the `<a_name_for_docker_image>` is the same as what you used in the step before).
 
-`docker run -d -p 80:80 --name <a_name_for_container> <a_name_for_docker_image>` 
+`docker run -d -p 80:5000 --name <a_name_for_container> <a_name_for_docker_image>` 
  
  Go to your browser and enter address for your `localhost:80`. You should now be able to see the web page.
 
