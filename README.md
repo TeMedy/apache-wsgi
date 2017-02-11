@@ -1,6 +1,6 @@
-# Debian - Python 3 - mod_wsgi
+# mod_wsgi-express with Apache in Container
 
-> This is the repo for running a python 3 app under `mod_wsgi` using the [Apache](https://httpd.apache.org/) server in a [Docker](https://www.docker.com/) container. 
+> This project is for running a Python 3 web framework such as [Flask](http://flask.pocoo.org/) by integrating [mod_wsgi](https://github.com/GrahamDumpleton/mod_wsgi) and [Apache](https://httpd.apache.org/) server in a [Docker](https://www.docker.com/) container. 
 
 ## Motivation
 Many of the docker repo's out there use flask local server in their images.
