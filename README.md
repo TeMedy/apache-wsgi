@@ -25,6 +25,6 @@ Use the following command to run the `Dockerfile` (Note that the `<a_name_for_do
 
 ## Clean up
 
-After running the docker build a couple of times, there will be images that occupies space on your hard drive. To Clean up those files, you need to run `docker rmi` and `docker volume rm`. To simpify the clean up process, I put all the clean up commands in the script `cleanup-docker`. This script stops all the containers. if you want more, you need to modify the script by uncommenting the lines that remove images and volumes. 
+After running the docker build a couple of times, there will be images that occupies space on your hard drive. To Clean up those files, you need to run `docker rmi` and `docker volume rm`. To simpify the clean up process, I put all the clean up commands in the script `cleanup-docker`. This script stops all the containers. if you want more, you need to modify the script by uncommenting the lines that remove images and volumes. Although Docker tends to gubble up the hard drive on Mac. See [here](https://github.com/docker/for-mac/issues/371) for some discussion and drastic solutions.
 
 
