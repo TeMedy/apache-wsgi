@@ -21,20 +21,18 @@ RUN apt-get update && apt-get install -y \
 # Install [mod_wsgi] (https://github.com/GrahamDumpleton/mod_wsgi) 
 RUN pip install mod_wsgi
 
-# Copy the web application code 
-COPY ./web_engine /var/www/your-application/web_engine/
-
-# Install the application requirements
+# Copy the web application code, and install the application requirements 
+ADD ./web_engine /var/www/your-application/web_engine
 RUN pip install -r /var/www/your-application/web_engine/requirements.txt
 
 # Copy over the wsgi file 
 COPY ./wsgi.py /var/www/your-application/wsgi.py
 
-EXPOSE 80
+EXPOSE 5000
 
-WORKDIR /var/www/your-application
+WORKDIR /var/www/your-application/
 
 # Run mode_wsgi with a non-root user and auto reload (https://github.com/GrahamDumpleton/mod_wsgi) 
-CMD mod_wsgi-express start-server wsgi.py --port=80 --user www-data --group www-data --reload-on-changes
+CMD mod_wsgi-express start-server wsgi.py --port=5000 --user www-data --group www-data --reload-on-changes
 #CMD /bin/bash
 

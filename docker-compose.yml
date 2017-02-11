@@ -1,0 +1,11 @@
+# this is substitute for the long and tedious "docker run [millions of options]" command
+version: '2'
+services:
+    web:
+        container_name: web_engine
+        build: .
+        image: temedy/apache-wsgi
+        ports:
+            - "80:5000"
+        volumes:
+            - $PWD/web_engine:/var/www/your-application/web_engine
