@@ -13,8 +13,8 @@ Here are the steps to get this container up and running and see the the web app 
 First, clone this repo. 
 
 ### Option 1: Conventional Docker
-Go to the folder where the `Dockerfile` is. 
-Build the container by running the following docker build command (don't forget the `dot` at the end).
+Go to the folder where the *Dockerfile* is. 
+Build the container by running the following docker build command (don't forget the *dot* at the end).
 
 `docker build -t <a_name_for_docker_image> .` 
 
